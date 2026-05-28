@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>정보 | 마포 서버 웜업 & 백링크 자동화 프로그램</title>
+    <meta name="description" content="마포 유일무이 서버 웜업 & 백링크 자동화 프로그램. 엄마도 쓰는 직관적 UI, 키워드 하나면 끝. 지금 전화문의 010-6279-0862">
+    <meta name="keywords" content="서버 웜업, 백링크 자동화, 마포, SEO, 백링크 프로그램, 서버 웜업 프로그램, 마포 서버 웜업, 정보 페이지">
+    <link rel="canonical" href="https://sf-t3-1779642675702-187.pages.dev/info">
+    <meta property="og:title" content="정보 | 서버 웜업 & 백링크 자동화 | 마포 | 웜업 전문">
+    <meta property="og:description" content="마포 지역 서버 웜업 전문, 백링크 자동화 프로그램으로 빠른 인덱싱과 내 사이트를 1페이지에 올리는 비밀. 엄마도 쓰는 강력한 자동화. 지금 전화문의 010-6279-0862">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-187.pages.dev/info">
+    <style>
+        /* CSS Variables - kr-neon-void theme, brutalist-avantgarde system */
+        :root {
+            --bg: #0a0a0f;
+            --text: #e0e0e0;
+            --accent: #ff007f;
+            --accent2: #00f0ff;
+            --border: #ff007f;
+            --card-bg: #12121a;
+            --heading: #ffffff;
+            --sub: #888;
+            --hover-bg: #1a1a2e;
+            --font-mono: 'Courier New', monospace;
+            --font-sans: 'Arial Black', 'Impact', sans-serif;
+            --spacing: 2rem;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        html { scroll-behavior:smooth; }
+        body {
+            background:var(--bg);
+            color:var(--text);
+            font-family:var(--font-sans);
+            line-height:1.6;
+            padding:0;
+        }
+        /* Typography */
+        h1,h2,h3,h4,h5,h6 { font-family:var(--font-mono); color:var(--heading); text-transform:uppercase; letter-spacing:2px; }
+        h1 { font-size:3rem; margin:2rem 0 1rem; border-left:8px solid var(--accent); padding-left:1rem; }
+        h2 { font-size:2.2rem; margin:2.5rem 0 1.2rem; border-bottom:4px solid var(--accent2); display:inline-block; }
+        h3 { font-size:1.6rem; margin:1.5rem 0 0.8rem; }
+        p, li, blockquote, address { font-family:var(--font-mono); font-size:1rem; margin-bottom:1rem; }
+        a { color:var(--accent2); text-decoration:none; border-bottom:2px solid transparent; transition:0.2s; }
+        a:hover { color:var(--accent); border-bottom-color:var(--accent); }
+        /* Layout */
+        .container { max-width:1200px; margin:0 auto; padding:0 var(--spacing); }
+        .section { padding:4rem 0; border-bottom:1px solid #222; }
+        .full-bleed { width:100vw; margin-left:calc(-50vw + 50%); background:var(--card-bg); padding:2rem 0; }
+        /* Navigation */
+        nav { background:#0d0d14; padding:1rem 0; border-bottom:3px solid var(--accent); position:sticky; top:0; z-index:100; }
+        .nav-container { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; padding:0 var(--spacing); }
+        .nav-logo { font-size:1.8rem; font-weight:bold; color:var(--heading); border:none; }
+        .nav-links { display:flex; gap:2rem; list-style:none; }
+        .nav-links a { border:none; font-size:1.1rem; padding:0.5rem; }
+        .hamburger { display:none; flex-direction:column; cursor:pointer; background:none; border:none; }
+        .hamburger span { display:block; width:30px; height:4px; background:var(--accent); margin:5px 0; }
+        /* Cards & Brutalist elements */
+        .card { background:var(--card-bg); border:2px solid var(--border); padding:2rem; margin:2rem 0; box-shadow:10px 10px 0 rgba(255,0,127,0.3); }
+        .card strong { color:var(--accent2); }
+        .tag { display:inline-block; background:var(--accent); color:#fff; padding:0.3rem 0.8rem; font-size:0.9rem; margin-right:0.5rem; margin-bottom:0.5rem; font-family:var(--font-mono); }
+        .button { display:inline-block; background:var(--accent); color:#fff; padding:0.8rem 2rem; border:none; font-family:var(--font-mono); font-size:1.1rem; cursor:pointer; transition:0.2s; border:2px solid var(--accent); text-transform:uppercase; }
+        .button:hover { background:transparent; color:var(--accent); }
+        .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+        .grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem; }
+        /* FAQ */
+        .faq-item { border-bottom:1px solid #333; padding:1.5rem 0; }
+        .faq-q { font-size:1.2rem; font-weight:bold; color:var(--heading); cursor:pointer; display:flex; justify-content:space-between; }
+        .faq-a { margin-top:0.8rem; display:none; }
+        .faq-item.active .faq-a { display:block; }
+        /* Footer */
+        footer { background:#0d0d14; padding:3rem 0; text-align:center; border-top:3px solid var(--accent2); }
+        footer a { border:none; }
+        /* Responsive */
+        @media (max-width:768px) {
+            .nav-links { display:none; flex-direction:column; position:absolute; top:100%; left:0; width:100%; background:#0d0d14; padding:1rem; }
+            .nav-links.show { display:flex; }
+            .hamburger { display:flex; }
+            .grid-2, .grid-3 { grid-template-columns:1fr; }
+            h1 { font-size:2rem; }
+            h2 { font-size:1.6rem; }
+            .container { padding:0 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="nav-logo">WARMUP.MP</a>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/pricing">가격</a></li>
+                <li><a href="/contact">문의</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="container section" style="padding-top:3rem;">
+        <h1>📡 정보: 서버 웜업 & 백링크 자동화의 전모</h1>
+        <p style="font-size:1.4rem; color:var(--accent2);">마포에서 시작된 혁명. 당신의 사이트는 아직도 구글 뒷골목에서 썩고 있는가?</p>
+        <div>
+            <span class="tag">#서버웜업</span>
+            <span class="tag">#백링크자동화</span>
+            <span class="tag">#마포SEO</span>
+            <span class="tag">#엄마도쓴다</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- 상세 설명 -->
+        <section class="section">
+            <h2>🔥 서버 웜업? 구라 빼고 설명한다</h2>
+            <p>네 사이트는 지금 냉동실에 있는 냉동만두야. <strong>서버 웜업</strong>은 그걸 전자레인지에 돌리는 거다. 우리는 마포 지역 전용 서버 팜을 통해 네 사이트를 미지근하게 만들어 구글 봇이 "아, 여기 사람 사네" 하고 인지하게 만든다. 결과? 인덱싱 속도 3배, 초기 랭킹 부스트. 원리도 모르고 따라 하지 마라. 이게 왜 되는지 알고 써야 효과가 있다.</p>
+            <div class="card">
+                <h3>⚡ 백링크 자동화 프로그램 – 진짜 작동 원리</h3>
+                <p>우리 프로그램은 단순 링크 스팸이 아니다. <strong>PBN 기반 자동화</strong>로 마포 지역 도메인과 글로벌 파워 도메인을 조합, 자연스러운 백링크 프로필을 생성한다. 키워드 하나 넣으면 48시간 안에 200개 이상의 컨텍스트 링크가 생성된다. "엄마도 쓴다"는 말이 빈말 아니다. 우리 엄마는 지금 이걸로 동네 미용실 사이트를 1페이지에 올렸다.</p>
+                <a href="#demo" class="button">🔥 체험판 요청</a>
+            </div>
+        </section>
+
+        <!-- 서비스 특징 + 지역 신호 -->
+        <section class="section">
+            <h2>🏙️ 왜 하필 마포인가?</h2>
+            <p>마포는 서울의 디지털 허브, 하지만 지역 기반 SEO는 완전히 무시당하고 있다. 우리는 여기에 주목했다. 마포 지역 IP, 로컬 비즈니스 데이터, 카페/스터디카페 링크까지 활용해 진짜 "마포스러운" 백링크를 만들어낸다.</p>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🤖 자동화 3단계</h3>
+                    <p><strong>1. 웜업</strong> – 서버 트래픽 시뮬레이션, 봇 유인<br>
+                       <strong>2. 백링크 생성</strong> – PBN + 에디토리얼 링크 자동 배포<br>
+                       <strong>3. 인덱싱</strong> – 구글, 네이버, 빙 동시 제출</p>
+                </div>
+                <div class="card">
+                    <h3>📍 마포 시그널</h3>
+                    <p>홍대, 합정, 상수, 공덕 — 모든 지역 키워드 대응. "마포 서버 웜업" 검색하면 우리가 나와야 정상이다. 그게 안 되면 지금 당장 문의해라. 우리가 해결해준다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ 섹션 -->
+        <section class="section" id="faq">
+            <h2>❓ 자주 묻는 헛소리들</h2>
+            <div class="faq-item active">
+                <div class="faq-q">Q: 이거 불법 아니에요? <span style="color:var(--accent);">▼</span></div>
+                <div class="faq-a">A: 순수 화이트햇 전략이다. 우리는 구글 웹마스터 가이드라인을 준수한다. (물론 그 가이드라인이 완벽하진 않지만.) 모든 링크는 자연스러운 프로필을 유지하도록 설계되어 있다. 불법? 그건 네가 남의 사이트 해킹할 때나 하는 소리다.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Q: 효과 보려면 얼마나 걸려요? <span style="color:var(--accent);">▼</span></div>
+                <div class="faq-a">A: 보통 2주 안에 인덱싱 증가 확인 가능. 첫 번째 키워드 상위 10위 진입까지 평균 45일. 물론 경쟁이 빡센 키워드는 더 걸릴 수 있다. 그래도 무료 상담 한 번 해봐라. 네 사이트가 얼마나 망가졌는지 알려준다.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Q: 엄마도 진짜 써요? <span style="color:var(--accent);">▼</span></div>
+                <div class="faq-a">A: 우리 어머니는 마포에서 20년째 미용실 하신다. 이 프로그램 없을 땐 페이지 10위권에도 못 들었다. 지금은 "마포 염색 잘하는 곳" 1페이지 고정이다. 직접 전화해서 확인해보시든가. 010-6279-0862</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Q: 가격이 어떻게 되나요? <span style="color:var(--accent);">▼</span></div>
+                <div class="faq-a">A: 월 15만원부터 시작한다. 1회성 웜업은 7만원. 돈이 아깝다고? 네 사이트가 지금 버는 돈이 월 0원인 걸 감안하면 공짜나 다름없다. <a href="/pricing">전체 가격표 보기</a></div>
+            </div>
+</body>
+</html>
