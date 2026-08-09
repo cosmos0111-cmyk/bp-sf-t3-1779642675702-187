@@ -1,123 +1,121 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>정보 | 마포 서버 웜업 & 백링크 자동화 프로그램</title>
-    <meta name="description" content="마포 유일무이 서버 웜업 & 백링크 자동화 프로그램. 엄마도 쓰는 직관적 UI, 키워드 하나면 끝. 지금 전화문의 010-6279-0862">
-    <meta name="keywords" content="서버 웜업, 백링크 자동화, 마포, SEO, 백링크 프로그램, 서버 웜업 프로그램, 마포 서버 웜업, 정보 페이지">
-    <link rel="canonical" href="https://sf-t3-1779642675702-187.maphoshirts.xyz/about.html">
-    <meta property="og:title" content="정보 | 마포 서버 웜업 &amp; 백링크 자동화 프로그램">
-    <meta property="og:description" content="마포 유일무이 서버 웜업 &amp; 백링크 자동화 프로그램. 엄마도 쓰는 직관적 UI, 키워드 하나면 끝. 지금 전화문의 010-6279-0862">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sf-t3-1779642675702-187.maphoshirts.xyz/about.html">
-    <style>
-        /* CSS Variables - kr-neon-void theme, brutalist-avantgarde system */
-        :root {
-            --bg: #0a0a0f;
-            --text: #e0e0e0;
-            --accent: #ff007f;
-            --accent2: #00f0ff;
-            --border: #ff007f;
-            --card-bg: #12121a;
-            --heading: #ffffff;
-            --sub: #888;
-            --hover-bg: #1a1a2e;
-            --font-mono: 'Courier New', monospace;
-            --font-sans: 'Arial Black', 'Impact', sans-serif;
-            --spacing: 2rem;
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        html { scroll-behavior:smooth; }
-        body {
-            background:var(--bg);
-            color:var(--text);
-            font-family:var(--font-sans);
-            line-height:1.6;
-            padding:0;
-        }
-        /* Typography */
-        h1,h2,h3,h4,h5,h6 { font-family:var(--font-mono); color:var(--heading); text-transform:uppercase; letter-spacing:2px; }
-        h1 { font-size:3rem; margin:2rem 0 1rem; border-left:8px solid var(--accent); padding-left:1rem; }
-        h2 { font-size:2.2rem; margin:2.5rem 0 1.2rem; border-bottom:4px solid var(--accent2); display:inline-block; }
-        h3 { font-size:1.6rem; margin:1.5rem 0 0.8rem; }
-        p, li, blockquote, address { font-family:var(--font-mono); font-size:1rem; margin-bottom:1rem; }
-        a { color:var(--accent2); text-decoration:none; border-bottom:2px solid transparent; transition:0.2s; }
-        a:hover { color:var(--accent); border-bottom-color:var(--accent); }
-        /* Layout */
-        .container { max-width:1200px; margin:0 auto; padding:0 var(--spacing); }
-        .section { padding:4rem 0; border-bottom:1px solid #222; }
-        .full-bleed { width:100vw; margin-left:calc(-50vw + 50%); background:var(--card-bg); padding:2rem 0; }
-        /* Navigation */
-        nav { background:#0d0d14; padding:1rem 0; border-bottom:3px solid var(--accent); position:sticky; top:0; z-index:100; }
-        .nav-container { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; padding:0 var(--spacing); }
-        .nav-logo { font-size:1.8rem; font-weight:bold; color:var(--heading); border:none; }
-        .nav-links { display:flex; gap:2rem; list-style:none; }
-        .nav-links a { border:none; font-size:1.1rem; padding:0.5rem; }
-        .hamburger { display:none; flex-direction:column; cursor:pointer; background:none; border:none; }
-        .hamburger span { display:block; width:30px; height:4px; background:var(--accent); margin:5px 0; }
-        /* Cards & Brutalist elements */
-        .card { background:var(--card-bg); border:2px solid var(--border); padding:2rem; margin:2rem 0; box-shadow:10px 10px 0 rgba(255,0,127,0.3); }
-        .card strong { color:var(--accent2); }
-        .tag { display:inline-block; background:var(--accent); color:#fff; padding:0.3rem 0.8rem; font-size:0.9rem; margin-right:0.5rem; margin-bottom:0.5rem; font-family:var(--font-mono); }
-        .button { display:inline-block; background:var(--accent); color:#fff; padding:0.8rem 2rem; border:none; font-family:var(--font-mono); font-size:1.1rem; cursor:pointer; transition:0.2s; border:2px solid var(--accent); text-transform:uppercase; }
-        .button:hover { background:transparent; color:var(--accent); }
-        .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
-        .grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem; }
-        /* FAQ */
-        .faq-item { border-bottom:1px solid #333; padding:1.5rem 0; }
-        .faq-q { font-size:1.2rem; font-weight:bold; color:var(--heading); cursor:pointer; display:flex; justify-content:space-between; }
-        .faq-a { margin-top:0.8rem; display:none; }
-        .faq-item.active .faq-a { display:block; }
-        /* Footer */
-        footer { background:#0d0d14; padding:3rem 0; text-align:center; border-top:3px solid var(--accent2); }
-        footer a { border:none; }
-        /* Responsive */
-        @media (max-width:768px) {
-            .nav-links { display:none; flex-direction:column; position:absolute; top:100%; left:0; width:100%; background:#0d0d14; padding:1rem; }
-            .nav-links.show { display:flex; }
-            .hamburger { display:flex; }
-            .grid-2, .grid-3 { grid-template-columns:1fr; }
-            h1 { font-size:2rem; }
-            h2 { font-size:1.6rem; }
-            .container { padding:0 1rem; }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>정보 | 마포 서버 웜업 & 백링크 자동화 프로그램</title>
+ <meta name="description" content="마포 유일무이 서버 웜업 & 백링크 자동화 프로그램. 엄마도 쓰는 직관적 UI, 키워드 하나면 끝.">
+ <meta name="keywords" content="서버 웜업, 백링크 자동화, 마포, SEO, 백링크 프로그램, 서버 웜업 프로그램, 마포 서버 웜업, 정보 페이지">
+ <link rel="canonical" href="https://sf-t3-1779642675702-187.maphoshirts.xyz/about.html">
+ <meta property="og:title" content="정보 | 마포 서버 웜업 &amp; 백링크 자동화 프로그램">
+ <meta property="og:description" content="마포 유일무이 서버 웜업 &amp; 백링크 자동화 프로그램. 엄마도 쓰는 직관적 UI, 키워드 하나면 끝.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://sf-t3-1779642675702-187.maphoshirts.xyz/about.html">
+ <style>
+ /* CSS Variables - kr-neon-void theme, brutalist-avantgarde system */
+ :root {
+ --bg: #0a0a0f;
+ --text: #e0e0e0;
+ --accent: #ff007f;
+ --accent2: #00f0ff;
+ --border: #ff007f;
+ --card-bg: #12121a;
+ --heading: #ffffff;
+ --sub: #888;
+ --hover-bg: #1a1a2e;
+ --font-mono: 'Courier New', monospace;
+ --font-sans: 'Arial Black', 'Impact', sans-serif;
+ --spacing: 2rem;
+ }
+ * { margin:0; padding:0; box-sizing:border-box; }
+ html { scroll-behavior:smooth; }
+ body {
+ background:var(--bg);
+ color:var(--text);
+ font-family:var(--font-sans);
+ line-height:1.6;
+ padding:0;
+ }
+ /* Typography */
+ h1,h2,h3,h4,h5,h6 { font-family:var(--font-mono); color:var(--heading); text-transform:uppercase; letter-spacing:2px; }
+ h1 { font-size:3rem; margin:2rem 0 1rem; border-left:8px solid var(--accent); padding-left:1rem; }
+ h2 { font-size:2.2rem; margin:2.5rem 0 1.2rem; border-bottom:4px solid var(--accent2); display:inline-block; }
+ h3 { font-size:1.6rem; margin:1.5rem 0 0.8rem; }
+ p, li, blockquote, address { font-family:var(--font-mono); font-size:1rem; margin-bottom:1rem; }
+ a { color:var(--accent2); text-decoration:none; border-bottom:2px solid transparent; transition:0.2s; }
+ a:hover { color:var(--accent); border-bottom-color:var(--accent); }
+ /* Layout */
+ .container { max-width:1200px; margin:0 auto; padding:0 var(--spacing); }
+ .section { padding:4rem 0; border-bottom:1px solid #222; }
+ .full-bleed { width:100vw; margin-left:calc(-50vw + 50%); background:var(--card-bg); padding:2rem 0; }
+ /* Navigation */
+ nav { background:#0d0d14; padding:1rem 0; border-bottom:3px solid var(--accent); position:sticky; top:0; z-index:100; }
+ .nav-container { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; padding:0 var(--spacing); }
+ .nav-logo { font-size:1.8rem; font-weight:bold; color:var(--heading); border:none; }
+ .nav-links { display:flex; gap:2rem; list-style:none; }
+ .nav-links a { border:none; font-size:1.1rem; padding:0.5rem; }
+ .hamburger { display:none; flex-direction:column; cursor:pointer; background:none; border:none; }
+ .hamburger span { display:block; width:30px; height:4px; background:var(--accent); margin:5px 0; }
+ /* Cards & Brutalist elements */
+ .card { background:var(--card-bg); border:2px solid var(--border); padding:2rem; margin:2rem 0; box-shadow:10px 10px 0 rgba(255,0,127,0.3); }
+ .card strong { color:var(--accent2); }
+ .tag { display:inline-block; background:var(--accent); color:#fff; padding:0.3rem 0.8rem; font-size:0.9rem; margin-right:0.5rem; margin-bottom:0.5rem; font-family:var(--font-mono); }
+ .button { display:inline-block; background:var(--accent); color:#fff; padding:0.8rem 2rem; border:none; font-family:var(--font-mono); font-size:1.1rem; cursor:pointer; transition:0.2s; border:2px solid var(--accent); text-transform:uppercase; }
+ .button:hover { background:transparent; color:var(--accent); }
+ .grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+ .grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem; }
+ /* FAQ */
+ .faq-item { border-bottom:1px solid #333; padding:1.5rem 0; }
+ .faq-q { font-size:1.2rem; font-weight:bold; color:var(--heading); cursor:pointer; display:flex; justify-content:space-between; }
+ .faq-a { margin-top:0.8rem; display:none; }
+ .faq-item.active .faq-a { display:block; }
+ /* Footer */
+ footer { background:#0d0d14; padding:3rem 0; text-align:center; border-top:3px solid var(--accent2); }
+ footer a { border:none; }
+ /* Responsive */
+ @media (max-width:768px) {
+ .nav-links { display:none; flex-direction:column; position:absolute; top:100%; left:0; width:100%; background:#0d0d14; padding:1rem; }
+ .nav-links.show { display:flex; }
+ .hamburger { display:flex; }
+ .grid-2, .grid-3 { grid-template-columns:1fr; }
+ h1 { font-size:2rem; }
+ h2 { font-size:1.6rem; }
+ .container { padding:0 1rem; }
+ }
+ </style>
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="/" class="nav-logo">WARMUP.MP</a>
-            <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('show')">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="/info">정보</a></li>
-                <li><a href="/pricing">가격</a></li>
-                <li><a href="/contact">문의</a></li>
-            </ul>
-        </div>
-    </nav>
+ <!-- Navigation -->
+ <nav>
+ <div class="nav-container">
+ <a href="/" class="nav-logo">WARMUP.MP</a>
+ <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+ 
+ </button>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/pricing">가격</a></li>
+ <li><a href="/contact">문의</a></li>
+ </ul>
+ </div>
+ </nav>
 
-    <!-- Page Header -->
-    <header class="container section" style="padding-top:3rem;">
-        <h1>📡 정보: 서버 웜업 & 백링크 자동화의 전모</h1>
-        <p style="font-size:1.4rem; color:var(--accent2);">마포에서 시작된 혁명. 당신의 사이트는 아직도 구글 뒷골목에서 썩고 있는가?</p>
-        <div>
-            <span class="tag">#서버웜업</span>
-            <span class="tag">#백링크자동화</span>
-            <span class="tag">#마포SEO</span>
-            <span class="tag">#엄마도쓴다</span>
-        </div>
-    </header>
+ <!-- Page Header -->
+ <header class="container section" style="padding-top:3rem;">
+ <h1>📡 정보: 서버 웜업 & 백링크 자동화의 전모</h1>
+ <p style="font-size:1.4rem; color:var(--accent2);">마포에서 시작된 혁명. 당신의 사이트는 아직도 구글 뒷골목에서 썩고 있는가?</p>
+ <div>
+ <span class="tag">#서버웜업</span>
+ <span class="tag">#백링크자동화</span>
+ <span class="tag">#마포SEO</span>
+ <span class="tag">#엄마도쓴다</span>
+ </div>
+ </header>
 
-<main><section class="section"><div class="container"><h1>마포 서버 웜업 &amp; 백링크 자동화 프로그램 정보</h1><p>이 페이지는 마포 지역에서 서버 웜업과 백링크 자동화 프로그램을 함께 다루는 곳을 찾는 이용자를 위해 관련 개념과 절차를 정리한 안내 자료입니다. 실제 이용 여부와 관계없이 기본 정보를 먼저 확인하는 데 도움이 되도록 구성했습니다.</p></div></section><section class="section"><div class="container"><h2>이용 안내</h2><div class="grid-2"><div class="card"><span class="tag">서버 웜업</span><p>신규 도메인이나 서버를 실제 운영 전에 자연스러운 트래픽 패턴에 맞춰 단계적으로 활성화하는 과정을 말합니다. 갑작스러운 지표 변화를 줄이기 위한 준비 단계로 다뤄집니다.</p></div><div class="card"><span class="tag">백링크 자동화 프로그램</span><p>여러 사이트에 걸쳐 링크를 등록하고 관리하는 작업을 도구로 처리하는 방식입니다. 수작업 대비 처리 속도와 기록 관리 측면에서 차이가 있다고 소개되는 경우가 많습니다.</p></div></div></div></section><section class="section full-bleed"><div class="container"><h2>가격이 결정되는 구조</h2><p>이 분야의 비용은 단일 항목이 아니라 여러 요소가 겹쳐 결정되는 편입니다. 아래 항목은 실제 문의 전에 확인해볼 만한 기준입니다.</p><div class="grid-3"><div class="card"><span class="tag">작업 범위</span><p>대상 사이트 수, 관리 기간, 보고 주기에 따라 범위가 달라집니다.</p></div><div class="card"><span class="tag">관리 방식</span><p>자동화 도구만 사용하는지, 수동 검수를 병행하는지에 따라 구성이 달라집니다.</p></div><div class="card"><span class="tag">지원 형태</span><p>1회성 세팅인지 지속적인 모니터링을 포함하는지가 비용 구조에 영향을 줍니다.</p></div></div></div></section><section class="section"><div class="container"><h2>마포 지역 정보</h2><p>마포 지역은 IT·마케팅 관련 소규모 사업장이 밀집한 편으로 알려져 있어, 관련 서비스를 찾는 문의도 이 지역을 기준으로 이뤄지는 경우가 있습니다. 지역 기반 여부는 곳마다 다르므로 문의 전 확인이 필요합니다.</p><button class="button" type="button">문의 방법 확인</button></div></section><section class="section"><div class="container"><h2>체크리스트</h2><div class="grid-2"><div class="card"><p>작업 범위와 기간이 문서로 명시되는지 확인합니다.</p></div><div class="card"><p>진행 상황을 확인할 수 있는 보고 방식이 있는지 확인합니다.</p></div><div class="card"><p>중단 시 환불이나 정산 기준이 사전에 안내되는지 확인합니다.</p></div><div class="card"><p>담당자와의 연락 채널이 명확한지 확인합니다.</p></div></div></div></section><section class="section"><div class="container"><h2>자주 묻는 질문</h2><div class="faq-item"><p class="faq-q">서버 웜업은 얼마나 걸리나요?</p><p class="faq-a">대상 규모와 목표에 따라 기간이 달라지며, 일괄적인 기준보다는 사전 협의를 통해 정해지는 경우가 많습니다.</p></div><div class="faq-item"><p class="faq-q">백링크 자동화 프로그램은 누구나 이용할 수 있나요?</p><p class="faq-a">운영 목적과 대상 사이트 상태에 따라 적용 가능 여부가 달라질 수 있어 사전 상담이 권장됩니다.</p></div><div class="faq-item"><p class="faq-q">마포 지역이 아니어도 문의할 수 있나요?</p><p class="faq-a">온라인 기반 서비스 특성상 지역과 무관하게 문의가 가능한 경우가 일반적입니다.</p></div></div></section><section class="section"><div class="container"><h2>용어 정리</h2><div class="grid-3"><div class="card"><span class="tag">웜업</span><p>신규 자산을 서서히 활성화하는 과정을 뜻합니다.</p></div><div class="card"><span class="tag">백링크</span><p>다른 사이트에서 특정 페이지로 연결되는 링크를 말합니다.</p></div><div class="card"><span class="tag">자동화 프로그램</span><p>반복 작업을 도구가 대신 처리하도록 만든 프로그램을 말합니다.</p></div></div></div></section><section class="section"><div class="container"><p>문의 전화: <a href="tel:010-6279-0862">010-6279-0862</a></p></div></section></main>
+<main><section class="section"><div class="container"><h1>마포 서버 웜업 &amp; 백링크 자동화 프로그램 정보</h1><p>이 페이지는 마포 지역에서 서버 웜업과 백링크 자동화 프로그램을 함께 다루는 곳을 찾는 이용자를 위해 관련 개념과 절차를 정리한 안내 자료입니다. 실제 이용 여부와 관계없이 기본 정보를 먼저 확인하는 데 도움이 되도록 구성했습니다.</p></div></section><section class="section"><div class="container"><h2>이용 안내</h2><div class="grid-2"><div class="card"><span class="tag">서버 웜업</span><p>신규 도메인이나 서버를 실제 운영 전에 자연스러운 트래픽 패턴에 맞춰 단계적으로 활성화하는 과정을 말합니다. 갑작스러운 지표 변화를 줄이기 위한 준비 단계로 다뤄집니다.</p></div><div class="card"><span class="tag">백링크 자동화 프로그램</span><p>여러 사이트에 걸쳐 링크를 등록하고 관리하는 작업을 도구로 처리하는 방식입니다. 수작업 대비 처리 속도와 기록 관리 측면에서 차이가 있다고 소개되는 경우가 많습니다.</p></div></div></div></section><section class="section full-bleed"><div class="container"><h2>가격이 결정되는 구조</h2><p>이 분야의 비용은 단일 항목이 아니라 여러 요소가 겹쳐 결정되는 편입니다. 아래 항목은 실제 문의 전에 확인해볼 만한 기준입니다.</p><div class="grid-3"><div class="card"><span class="tag">작업 범위</span><p>대상 사이트 수, 관리 기간, 보고 주기에 따라 범위가 달라집니다.</p></div><div class="card"><span class="tag">관리 방식</span><p>자동화 도구만 사용하는지, 수동 검수를 병행하는지에 따라 구성이 달라집니다.</p></div><div class="card"><span class="tag">지원 형태</span><p>1회성 세팅인지 지속적인 모니터링을 포함하는지가 비용 구조에 영향을 줍니다.</p></div></div></div></section><section class="section"><div class="container"><h2>마포 지역 정보</h2><p>마포 지역은 IT·마케팅 관련 소규모 사업장이 밀집한 편으로 알려져 있어, 관련 서비스를 찾는 문의도 이 지역을 기준으로 이뤄지는 경우가 있습니다. 지역 기반 여부는 곳마다 다르므로 문의 전 확인이 필요합니다.</p><button class="button" type="button">문의 방법 확인</button></div></section><section class="section"><div class="container"><h2>체크리스트</h2><div class="grid-2"><div class="card"><p>작업 범위와 기간이 문서로 명시되는지 확인합니다.</p></div><div class="card"><p>진행 상황을 확인할 수 있는 보고 방식이 있는지 확인합니다.</p></div><div class="card"><p>중단 시 환불이나 정산 기준이 사전에 안내되는지 확인합니다.</p></div><div class="card"><p>담당자와의 연락 채널이 명확한지 확인합니다.</p></div></div></div></section><section class="section"><div class="container"><h2>자주 묻는 질문</h2><div class="faq-item"><p class="faq-q">서버 웜업은 얼마나 걸리나요?</p><p class="faq-a">대상 규모와 목표에 따라 기간이 달라지며, 일괄적인 기준보다는 사전 협의를 통해 정해지는 경우가 많습니다.</p></div><div class="faq-item"><p class="faq-q">백링크 자동화 프로그램은 누구나 이용할 수 있나요?</p><p class="faq-a">운영 목적과 대상 사이트 상태에 따라 적용 가능 여부가 달라질 수 있어 사전 상담이 권장됩니다.</p></div><div class="faq-item"><p class="faq-q">마포 지역이 아니어도 문의할 수 있나요?</p><p class="faq-a">온라인 기반 서비스 특성상 지역과 무관하게 문의가 가능한 경우가 일반적입니다.</p></div></div></section><section class="section"><div class="container"><h2>용어 정리</h2><div class="grid-3"><div class="card"><span class="tag">웜업</span><p>신규 자산을 서서히 활성화하는 과정을 뜻합니다.</p></div><div class="card"><span class="tag">백링크</span><p>다른 사이트에서 특정 페이지로 연결되는 링크를 말합니다.</p></div><div class="card"><span class="tag">자동화 프로그램</span><p>반복 작업을 도구가 대신 처리하도록 만든 프로그램을 말합니다.</p></div></div></div></section><section class="section"><div class="container"><p>문의 전화: </p></div></section></main>
 
 
 </body>
